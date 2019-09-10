@@ -26,7 +26,6 @@ export class ShippingComponent implements OnInit {
   constructor() { }
   ngOnInit() {
   }
-
 }
 
 // end program

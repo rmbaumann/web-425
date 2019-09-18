@@ -1,23 +1,17 @@
-/*
-============================================
-; Title: app-rouing.module.s
+/*============================================
+; Title: app-routing.module.ts
 ; Author: Reva Baumann
 ; Date: 16 September 2019
-; Modified By: Reva Baumann
-; Description: Two-Way Binding
+; Description:  two-way-binding
 ;===========================================
 */
 
-// Start Program
-
-// impor tmodule
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// use routes
+
 const routes: Routes = [];
 
-// use NgModule for routes
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

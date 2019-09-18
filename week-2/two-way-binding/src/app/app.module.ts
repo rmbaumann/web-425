@@ -1,16 +1,11 @@
-/*
-============================================
+/*============================================
 ; Title: app.module.ts
 ; Author: Reva Baumann
 ; Date: 16 September 2019
-; Modified By: Reva Baumann
-; Description: Two-Way Binding
+; Description:  two-way-binding
 ;===========================================
 */
 
-// start program
-
-// Import the Angular Module
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +13,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-// Declare the Module Detail
 @NgModule({
   declarations: [
     AppComponent
@@ -33,4 +27,4 @@ import { AppComponent } from './app.component';
 })
 export class AppModule { }
 
-// End Program
+// end prgoram

@@ -1,3 +1,16 @@
+/*
+============================================
+; Title: app.component.ts
+; Author: Reva Baumann
+; Date: 09/24/2019
+; Modified By: Reva Baumann
+; Description: Guarding Routes
+;===========================================
+*/
+
+// Start program
+
+// Import the module
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,3 +21,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'guards';
 }
+
+// End Prgram

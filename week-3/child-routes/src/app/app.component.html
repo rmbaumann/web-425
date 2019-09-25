@@ -1,0 +1,34 @@
+<!--
+============================================
+; Title: app.component.ts
+; Author: Reva Baumann
+; Date: 23 September 2019
+; Modified By: Reva Baumann
+; Description: app.component.ts
+;===========================================
+-->
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-dark">
+      <a class="navbar-brand" routerLink="/">Child Routes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/product', productId]">Product Id</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/description">Product Description</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- output for the router path -->
+<router-outlet></router-outlet>

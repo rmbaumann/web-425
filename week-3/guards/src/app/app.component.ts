@@ -13,6 +13,8 @@
 // Import the module
 import { Component } from '@angular/core';
 
+
+// Component for html/css
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

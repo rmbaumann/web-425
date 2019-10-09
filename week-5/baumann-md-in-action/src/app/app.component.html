@@ -1,0 +1,22 @@
+<!--
+============================================
+; Title: Exercise 5.4
+; Author: Reva Baumann
+; Date: 09 October 2019
+; Modified By: Reva Baumann
+; Description: Flex-Layout
+;===========================================
+-->
+
+<!-- toolbar -->
+<app-tool-bar></app-tool-bar>
+
+<!-- flexbar -->
+<div fxLayout="row" fxFlexFill>
+  <div class="left" fxFlex="20%">
+    <h1>Navigation</h1>
+  </div>
+  <div fxFlex="85%">
+    <router-outlet></router-outlet>
+  </div>
+</div>

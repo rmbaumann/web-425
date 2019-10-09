@@ -1,0 +1,29 @@
+.frm-login{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .frm-login-panel{
+    border: 1px solid;
+  }
+  .frm-login-header{
+    background-color: #902379;
+  }
+  .frm-login-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    color: #808080;
+  }
+  .btn-login{
+    background-color: #902379;
+    color: #FFFFFF;
+  }
+  .btn-cancel{
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  .wrapper{
+    width: 100%;
+    margin-top: 10%;
+  }

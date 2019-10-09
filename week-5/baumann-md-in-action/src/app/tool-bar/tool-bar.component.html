@@ -1,0 +1,31 @@
+<!--
+============================================
+; Title: Exercise 5.4
+; Author: Reva Baumann
+; Date: 09 October 2019
+; Modified By: Reva Baumann
+; Description: Flex-Layout
+;===========================================
+-->
+
+<!-- Define the material toolbar applying our custom menu css -->
+<mat-toolbar class="menu" role="header" color="primary">
+    <!-- Define a single row for the toolbar -->
+    <mat-toolbar-row>
+      <!-- Define the badge for the toolbar -->
+      <button mat-button class="tool__icon-button mat-button">
+        <!-- Use the web material icon -->
+        <mat-icon>web</mat-icon>
+        <span style="margin-left: 5px !important">Web 425</span>
+      </button>
+      <!-- Define additional buttons for the toolbar -->
+      <button mat-button class="mat-button" routerLink="/">Home</button>
+      <!-- spacing div -->
+      <div fxFlex></div>
+      <button mat-button class="tool__icon-button mat-button" routerLink="login">
+        <!-- use a material icon-->
+        <mat-icon>Account</mat-icon>
+        <span>Contact Us</span>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>

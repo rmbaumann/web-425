@@ -1,0 +1,53 @@
+<!--
+============================================
+; Title: Assignment 6.4
+; Author: Reva Baumann
+; Date: 16 October 2019
+; Modified By: Reva Baumann
+; Description: OnChange() Events
+;===========================================
+-->
+
+<!-- Toolbar -->
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="tool__icon-button mat-button">
+
+      <mat-icon>web</mat-icon>
+
+      <span style="margin-left: 5px !important">WEB 425</span>
+
+    </button>
+
+    <button mat-button class="mat-button" routerLink="/">Child</button>
+
+    <div fxFlex></div>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- Flex Row -->
+<div fxLayout="row" fxFlexFill>
+  <div class="left" fxFlex="10%">
+    <h4>Navigation</h4>
+  </div>
+
+  <div fxFlex="90%">
+    <div class="wrapper">
+      <div class="parent">
+        <h2>Parent</h2>
+        <div>
+
+          Greetings: <input type="text" [(ngModel)]="myGreeting">
+        </div>
+        <div>
+
+          Username: <input type="text" [(ngModel)]="myUser.name">
+        </div>
+      </div>
+
+      <app-child [greeting]="myGreeting" [user]="myUser"></app-child>
+
+    </div>
+  </div>
+</div>

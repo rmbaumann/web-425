@@ -1,0 +1,33 @@
+/*
+============================================
+; Title: Assignment 6.4
+; Author: Reva Baumann
+; Date: 16 October 2019
+; Modified By: Reva Baumann
+; Description: OnChange() Events
+;===========================================
+*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+h4{
+    color: lightblue;
+    text-align: right;
+    width: 100%
+}
+
+.wrapper {
+    margin-top: 2rem;
+    padding: 2 rem;
+    text-align: left;
+    align-content: left;
+    padding-top: 10px;
+}
+
+

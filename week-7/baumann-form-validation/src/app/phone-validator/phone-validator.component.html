@@ -1,0 +1,49 @@
+<!--
+============================================
+; Title: Exercise 7.3
+; Author: Reva Baumann
+; Date: 19 October 2019
+; Modified By: Reva Baumann
+; Description: Form Validation
+============================================
+-->
+
+
+<div class="wrapper">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <mat-card class="login-panel frm-panel">
+        <mat-card-header class="frm-header">
+          <mat-toolbar class="frm-toolbar">
+            Phone Validator
+          </mat-toolbar>
+        </mat-card-header>
+  
+        <mat-card-content class="frm-body">
+          <mat-form-field>
+            <input
+              type="text"
+              name="telephone"
+              matInput
+              placeholder="Phone Number"
+              required
+              pattern="[0-9]*"
+              minlength="10"
+              ngModel
+              #phone="ngModel"
+            />
+          </mat-form-field>
+
+          <mat-error *ngIf="phone.touched && phone.hasError('minlength')">Phone musy have at least 10 digits</mat-error>
+
+          <mat-error *ngIf="phone.touched && phone.hasError('required')">Phone is required</mat-error>
+
+          <mat-error *ngIf="phone.touched && phone.hasError('pattern')">Only digits are allowed</mat-error>
+        </mat-card-content>
+  
+        <!-- define the container for the buttons -->
+        <mat-card-actions class="frm-actions">
+          <button type="submit" mat-raised-button class="btn" [disabled]="phone.isValid">Submit</button>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>

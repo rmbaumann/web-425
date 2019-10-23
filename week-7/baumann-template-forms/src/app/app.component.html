@@ -1,0 +1,33 @@
+<!--
+============================================
+; Title: Exercise 7.2
+; Author: Reva Baumann
+; Date: 19 October 2019
+; Modified By: Reva Baumann
+; Description: Template-Driven Forms
+;===========================================
+-->
+
+
+<mat-toolbar class="menu" role="header" color="primary">
+  <mat-toolbar-row>
+    <button mat-button class="tool__icon-button mat-button">
+      <mat-icon>web</mat-icon>
+      <span style="margin-left: 5px !important">WEB 425</span>
+    </button>
+    <button mat-button class="mat-button" routerLink="/">Template-Driven Forms</button>
+    <div fxFlex></div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+  <div>Username: <input type="text" name="username" ngModule></div>
+
+  <div>SSN: <input type="text" name="username" ngModel></div>
+
+  <div ngModelGroup="passwordsGroup">
+    <div>Password: <input type="password" name="password" ngModel></div>
+    <div>Confirm password: <input type="password" name="pconfirm" ngModel></div>
+  </div>
+</form>

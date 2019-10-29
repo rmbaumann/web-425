@@ -1,0 +1,21 @@
+/*
+============================================
+; Title: Exercise 8.2
+; Author: Reva Baumann
+; Date: 28 October 2019
+; Modified By: Reva Baumann
+; Description: Server-Side Communications 
+;===========================================
+*/
+
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "outDir": "build",
+      "target": "es6",
+      "sourceMap": true
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }

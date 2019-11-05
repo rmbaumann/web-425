@@ -1,0 +1,25 @@
+.width {
+    margin: 20px auto;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .form {
+    width: 50%;
+    padding-bottom: 5em;
+    margin: 0 auto;
+  }
+  
+  h4 {
+    text-align: center;
+    padding: 5px;
+  }
+
+
+  .right {
+    float: right;
+  }
+
+  .top {
+    padding-top: 25px;
+  }

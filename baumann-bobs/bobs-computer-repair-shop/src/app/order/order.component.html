@@ -1,0 +1,104 @@
+<!--
+============================================
+; Title: Bob's Computer Repair Shop
+; Author: Reva Baumann
+; Date: 03 November, 2019
+; Modified By: Reva Baumann
+; Description: Web 425 Week 9 Project
+;===========================================
+-->
+
+<mat-card-title class="form-title top"></mat-card-title>
+<div class="container">
+  <mat-card class="form">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value); f.reset()">
+      <mat-card-content>
+
+          <!--H4 Details-->
+        <h4>Repair Services</h4>
+        <div ngModelGroup="serviceRequest">
+            
+          <!-- Password Reset -->
+          <div class="passwordReset padding">
+            <mat-checkbox class="padding" name="password" ngModel></mat-checkbox>
+            <label for="passwordReset">Password Reset: $39.99</label>
+          </div>
+
+          <!-- Spyware Removal -->
+          <div class="spywareRemoval padding">
+            <mat-checkbox class="padding" name="spyware" ngModel></mat-checkbox>
+            <label for="spywareRemoval">Spyware Removal: $99.99</label>
+          </div>
+
+          <!-- Memory Upgrade -->
+          <div class="memoryUpgrade padding">
+              <mat-checkbox class="padding" name="memory" ngModel></mat-checkbox>
+            <label for="memoryUpgrade">Memory Ugrade: $129.99</label>
+          </div>
+
+          <!-- Software  -->
+          <div class="softwareInstallation padding">
+              <mat-checkbox class="padding" name="software"ngModel></mat-checkbox>
+            <label for="softwareInstallation">Software Installation: $49.99</label>
+          </div>
+
+          <!-- Tune Up -->
+          <div class="tuneUp padding">
+              <mat-checkbox class="padding" name="tuneUp" ngModel></mat-checkbox>
+            <label for="tuneUp">Tune Up: $89.99</label>
+          </div>
+
+          <!-- Disc Clean -->
+          <div class="diskCleanUp padding">
+              <mat-checkbox class="padding" name="cleanUp" ngModel></mat-checkbox>
+            <label for="diskCleanUp">Disk Clean-Up: $149.99</label>
+          </div>
+
+          <!-- Keyboard cleaning -->
+          <div class="keyboardCleaning padding">
+            <mat-checkbox class="padding" name="keyboard" ngModel></mat-checkbox>
+            <label for="keyboardCleaning">Keyboard Cleaning: $45.00</label>
+          </div>
+
+          <!-- Labor  -->
+          <hr/>
+          <h2>Additional Services</h2>
+          <label class="padding-services">Parts:</label>
+          <mat-form-field>
+            <input class="padding"
+              type="number"
+              matInput
+              name="parts"
+              placeholder="Parts.. Enter Value"
+              ngModel
+            />
+          </mat-form-field>         
+          
+          <div></div>
+
+          <label class="padding-services">Hourly Labor:</label>
+
+          <mat-form-field>
+            <input class="padding"
+              type="number"
+              matInput
+              name="labor"
+              placeholder="Hours of Labor @ $100.00.."
+              ngModel/>
+          </mat-form-field>
+          <div></div>
+        </div>
+        <div></div>
+      </mat-card-content>
+
+      <!-- Submit Button -->
+      <hr/>
+      <mat-card-actions>
+        <button mat-raised-button class="right" color="primary" type="submit" (click)="openDialog()">
+          Submit
+        </button>
+        
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

@@ -1,0 +1,34 @@
+<!--
+============================================
+; Title: Bob's Computer Repair Shop
+; Author: Reva Baumann
+; Date: 03 November, 2019
+; Modified By: Reva Baumann
+; Description: Web 425 Week 9 Project
+;===========================================
+-->
+
+<h4 mat-dialog-title>Invoice</h4>
+<div mat-dialog-content>
+  Date: {{ today | date }}
+    <mat-list>
+      <mat-list-item *ngFor="let services of services">
+        {{ services.service }}
+        {{ services.price | currency }}
+      </mat-list-item>
+
+      <mat-list-item *ngFor="let totalOrder of totalOrder">
+        {{ totalOrder.sum }}
+        {{ totalOrder.invoiceTotal | currency }}
+      </mat-list-item>
+    </mat-list>
+</div>
+
+<hr/>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button matDialogClose="confirm" color="accent" cdkFocusInitial>Close Dialog</button>
+</div>
+
+<script>
+  new Date().toDateString()
+</script>

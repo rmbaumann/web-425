@@ -14,8 +14,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material';
 import { InvoiceComponent } from '../invoice/invoice.component';
-import { MatListModule } from '@angular/material/list';
-import { NgForm } from '@angular/forms';
 import { ticket } from './ticket'
 
 // Details of the component
@@ -100,18 +98,18 @@ import { ticket } from './ticket'
         
         // Invoicing Total, calc
         if (formData.serviceRequest) {
-            this.services.push({service: null, price: null, total:     
-              this.order.password.price +
-              this.order.spyware.price +
-              this.order.memory.price +
-              this.order.software.price +
-              this.order.tuneUp.price +
-              this.order.cleanUp.price +
-              this.order.keyboard.price +
-              this.order.labor.price +
-              this.order.parts.price
-            })
-          }   
+          this.services.push({service: null, price: null, total:  
+            this.order.password.price +
+            this.order.spyware.price +
+            this.order.memory.price +
+            this.order.software.price +
+            this.order.tuneUp.price +
+            this.order.cleanUp.price +
+            this.order.keyboard.price +
+            this.order.parts.price +
+            this.order.labor.price
+          })
+        }  
 
         // Call the services and order total 
         console.log(this.services);

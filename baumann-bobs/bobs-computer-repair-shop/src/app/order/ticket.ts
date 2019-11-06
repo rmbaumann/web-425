@@ -19,9 +19,4 @@ export class ticket {
     price: number;
 }
 
-export class invoiceTotal {
-    sum: string;
-    invoiceTotal: number;
-}
-
 // End Program

@@ -24,7 +24,6 @@ import { Component, OnInit, Input, Inject } from '@angular/core';
     services: [];
     today: number = Date.now();
     
-  
     constructor(private dialogRef: MatDialogRef<InvoiceComponent>, @Inject(MAT_DIALOG_DATA) data) {
         this.services = data.ticket;
     }

@@ -18,15 +18,16 @@
         <td>{{ services.price | currency }}</td>
       </tr>
       <br>
-      <tr *ngFor="let services of services">
-          <td *ngIf="services.total > 0">Total Charges</td>
-          <td *ngIf="services.total > 0">{{ services.total | currency }}</td>
+      <tr *ngFor="let total of total">
+          <td>{{ total.title }}</td>
+          <td>{{ total.total | currency }}</td>
       </tr>
     </table>
 
 
 </div>
 </mat-card>
-<div mat-dialog-actions>
+<div mat-dialog-actions align="end">
     <button mat-raised-button matDialogClose="confirm" color="accent" cdkFocusInitial>Close Dialog</button>
 </div>
+

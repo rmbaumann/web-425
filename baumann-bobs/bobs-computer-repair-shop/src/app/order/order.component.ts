@@ -94,13 +94,13 @@ import { ticket } from './ticket'
 
         // Additional Parts
         if (formData.serviceRequest.parts) {
-            this.order.parts.price = formData.serviceRequest.parts;
-            this.services.push({service: 'Additional Parts', price: this.order.parts.price});
+            this.order.parts.price = formData.serviceRequest.parts
+            this.services.push({service: 'Parts', price: this.order.parts.price});
           }
         
         // Invoicing Total, calc
         if (formData.serviceRequest) {
-            this.totalOrder.push({sum: 'Total', invoiceTotal:    
+            this.services.push({service: null, price: null, total:     
               this.order.password.price +
               this.order.spyware.price +
               this.order.memory.price +
@@ -115,7 +115,6 @@ import { ticket } from './ticket'
 
         // Call the services and order total 
         console.log(this.services);
-        console.log(this.totalOrder)
       }
 
       constructor(private dialog: MatDialog) {
@@ -127,7 +126,6 @@ import { ticket } from './ticket'
         const dialogRef = this.dialog.open(InvoiceComponent, {
           data: {
             ticket: this.services,
-            invoiceTotal: this.totalOrder
           },
           disableClose: true,
           // width: '800px'

@@ -15,9 +15,8 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material';
 import { InvoiceComponent } from '../invoice/invoice.component';
 import { MatListModule } from '@angular/material/list';
-import { CloseScrollStrategy } from '@angular/cdk/overlay';
 import { NgForm } from '@angular/forms';
-import { ticket, invoiceTotal } from './ticket'
+import { ticket } from './ticket'
 
 // Details of the component
 @Component({
@@ -27,7 +26,6 @@ import { ticket, invoiceTotal } from './ticket'
   })
   export class OrderComponent {
     services: ticket[] = [];
-    totalOrder: invoiceTotal[] = [];
 
     // Order Details - Srvices
     order = {
